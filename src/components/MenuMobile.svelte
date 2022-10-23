@@ -15,7 +15,7 @@
   on:click={toggleMenu}
   on:keydown={() => null}
   class={`w-5 cursor-pointer ${menuButtonVisibility} md:hidden z-20`}
-  src="/images/icons8-menu-90.png"
+  src="images/icons8-menu-90.png"
   alt="menu button"
 />
 
@@ -23,7 +23,7 @@
   on:click={toggleMenu}
   on:keydown={() => null}
   class={`w-5 cursor-pointer ${menuVisiblity} md:hidden z-20`}
-  src="/images/icons8-close-48.png"
+  src="images/icons8-close-48.png"
   alt="menu button"
 />
 
