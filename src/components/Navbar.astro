@@ -1,0 +1,30 @@
+---
+import MenuMobile from "./MenuMobile.svelte";
+
+const links = [
+  { title: "home", href: "" },
+  { title: "about me", href: "" },
+  { title: "works", href: "" },
+  { title: "contact", href: "" },
+];
+---
+
+<nav class="w-full fixed top-0 bg-white z-20 px-2 md:px-0">
+  <div class="container mx-auto py-5 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <img class="w-8" src="/images/logo.png" alt="website logo" />
+      <span class="text-2xl font-bold text-indigo-900">Joseph Choi</span>
+    </div>
+    <ul
+      class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm capitalize"
+    >
+      {links.map((link) => <li class="hover:text-gray-500">{link.title}</li>)}
+    </ul>
+    <img
+      class="w-5 cursor-pointer hidden md:block"
+      src="/images/moon.png"
+      alt="icon of the moon"
+    />
+    <MenuMobile client:idle />
+  </div>
+</nav>

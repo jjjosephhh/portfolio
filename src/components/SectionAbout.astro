@@ -1,0 +1,42 @@
+---
+import SkillBar from "./SkillBar.astro";
+---
+
+<div class="px-10">
+  <div
+    class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20"
+  >
+    <div class="relative flex flex-1">
+      <img
+        class="h-1/4 absolute top-0 left-0 -z-10"
+        src="/images/dots.png"
+        alt="dot background"
+      />
+      <div class="h-full rounded-full overflow-hidden">
+        <img src="/images/portrait.png" alt="portrait of Joseph" />
+      </div>
+    </div>
+    <div class="my-auto flex flex-col gap-3 flex-1">
+      <h1 class="text-indigo-600 font-bold text-lg capitalize">about me</h1>
+      <h1 class="text-black font-medium text-3xl capitalize">
+        Skills & Technologies
+      </h1>
+      <p class="text-gray-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere
+        eget purus in vulputate. Ut posuere sagittis rhoncus. Donec sed luctus
+        urna. Quisque viverra dignissim metus at luctus. Nulla et odio nec justo
+        efficitur tincidunt congue nec urna. Maecenas lacus diam, semper quis
+        venenatis vel, venenatis non diam. Praesent sit amet purus ante. Sed
+        rutrum tempor urna eu tempor. Quisque purus augue, pulvinar in mollis
+        et, placerat consectetur lectus. Duis gravida, tellus eu consequat
+        facilisis, nisi sapien consectetur urna, eu rhoncus diam arcu vitae
+        tellus.
+      </p>
+      <SkillBar title="HTML / CSS / JS" width="w-full" />
+      <SkillBar title="React / React Native / Redux" width="w-full" />
+      <SkillBar title="TypeScript" width="w-11/12" />
+      <SkillBar title="Python / Flask" width="w-10/12" />
+      <SkillBar title="MySQL" width="w-9/12" />
+    </div>
+  </div>
+</div>

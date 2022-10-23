@@ -1,0 +1,12 @@
+---
+interface Props {
+  title: string;
+  width: string;
+}
+const { title, width } = Astro.props;
+---
+
+<h2 class="text-gray-400 font-medium">{title}</h2>
+<div class="w-full bg-gray-200 h-1.5 rounded-md">
+  <div class={`${width} bg-indigo-600 h-1.5 rounded-md`}></div>
+</div>
